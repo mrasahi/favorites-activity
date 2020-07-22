@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorites Activity</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Favorites Activity</h1>
+
+
+    <div id="userFav">
+        
+    </div>
+
+    <div id="myFav">
+
+    </div>
+
+    <script>
+
+        // My Favorites
+        let myMovie = 'Avengers'
+        let mySong = 'Song'
+        let myGame = 'Team Fortress 2'
+        let myFood = 'Spaghetti'
+
+        // Favorites Array
+        let myFav = [myMovie, mySong, myGame, myFood]
+        let userFav = []
+
+        // Prompt user for Favorites
+        userFav.push(prompt('What is your favorite Movie?'))
+        if (myFav[0] === userFav[0]) {
+            alert("Hey! That's my favorite too!")
+        } else {
+            alert(`Nice! Mine is ${myFav[0]}`)
+        }
+
+        userFav.push(prompt('What is your favorite Song?'))
+        if (myFav[1] === userFav[1]) {
+            alert("Hey! That's my favorite too!")
+        } else {
+            alert(`Cool! Mine is ${myFav[1]}`)
+        }
+
+        userFav.push(prompt('What is your favorite Game?'))
+        if (myFav[2] === userFav[2]) {
+            alert("Hey! That's my favorite too!")
+        } else {
+            alert(`Awesome! Have you heard of ${myFav[2]}?`)
+        }
+
+        userFav.push(prompt('What is your favorite Food?'))
+        if (myFav[3] === userFav[3]) {
+            alert("Hey! That's my favorite too!")
+        } else {
+            alert(`${userFav[3]}? ...That's not ${myFav[3]}...`)
+        }
+
+        // console.log(myFav)
+        // console.log(userFav)
+        // console.log(userFav[1])
+        // console.log(userFav[2])
+        // console.log(userFav[3])
+        // console.log(userFav[4])
+
+
+        document.getElementById("userFav").innerHTML = `${userFav} <br> ${myFav}`
+        document.getElementById("myFav").innerHTML = `${myFav}`
+
+
+
+
+    </script>
+
+</body>
+</html>
