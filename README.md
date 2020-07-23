@@ -18,3 +18,10 @@ Create a variable to track your count
 Render the count in your HTML
 Create a button on the page and give it a click event listener
 Each time the button is clicked, increment count by 1 and render count's new value to the page
+
+# Favorites App 3.0
+Create a Form that allows me to enter in at least 4 different pieces of information about my favorites (ex: movie title, director, genre, release year)
+When the user submits the form, display the information for the movie below
+Each time the user submits a new favorite, display another favorite for them below the form
+
+* Hint: Since favorites now have multiple properties to them, modeling them out with strings will not be sufficient. Try using objects to represent the favorites

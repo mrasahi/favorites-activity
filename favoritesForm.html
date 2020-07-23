@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorites Form</title>
+</head>
+
+<body>
+
+
+    <form>
+
+        <p>
+            <label for="gameTitle">Game Title</label>
+            <input type="gameTitle" id="gameTitle">
+        </p>
+
+        <p>
+            <label for="gameGenre">Game Genre</label>
+            <input type="gameGenre" id="gameGenre">
+        </p>
+        <p>
+            <label for="GameDev">Game Developer</label>
+            <input type="gameDev" id="gameDev">
+        </p>
+        <p>
+            <label for="gameYear">Release Year</label>
+            <input type="gameYear" id="gameYear">
+        </p>
+        <p>
+            <label for="gameRating">Game Rating</label>
+            <input type="gameRating" id="gameRating">
+        </p>
+        <p>
+            <button id="submit">Submit</button>
+        </p>
+    </form>
+
+    <div class="game"></div>
+
+
+    <script>
+
+        // Test in console.log to confirm
+        // document.getElementById('submit').addEventListener('click', event => {
+        //     event.preventDefault()
+        //     console.log(document.getElementById('gameTitle').value)
+        //     console.log(document.getElementById('gameGenre').value)
+        //     console.log(document.getElementById('gameDev').value)
+        //     console.log(document.getElementById('gameYear').value)
+        //     console.log(document.getElementById('gameRating').value)
+        // })
+
+        // let userGame = {
+        //     title: 'title',
+        //     genre: 'genre',
+        //     dev: 'dev',
+        //     year: 'year',
+        //     rating: 'rating',
+        // }
+
+        let userGame = {
+            title: '',
+            genre: '',
+            dev: '',
+            year: '',
+            rating: '',
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
