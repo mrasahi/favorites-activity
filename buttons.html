@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Counter</title>
+</head>
+<body>
+
+    <button id="countUp">Count + 1</button>
+
+    <p id="count"></p>
+
+    <button id="countDown">Count - 1</button>
+
+
+    <script>
+
+        // Set counter to 0 as default
+        let counter = 0
+        document.getElementById('count').textContent = counter
+
+        document.getElementById('countUp').addEventListener('click', () => {
+            counter++
+            document.getElementById('count').textContent = counter
+        })
+
+        document.getElementById('countDown').addEventListener('click', () => {
+            counter--
+            document.getElementById('count').textContent = counter
+
+        } )
+
+
+
+
+    </script>
+    
+</body>
+</html>
